@@ -95,7 +95,7 @@ li{
 /* Home Section Starts here  */
 
 .hero{
-    background: linear-gradient(black, transparent) ,url(Images/landing-page.jpg);
+    background: linear-gradient(black, transparent) ,url(landing-page.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -133,7 +133,7 @@ li{
 /* Location Styles Starts */
 #locations{
     height: 100vh;
-    background: linear-gradient(black, transparent), url(Images/new-york-page.png);
+    background: linear-gradient(black, transparent), url(new-york-page.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -311,7 +311,7 @@ input:focus {
   #contact{
     min-height: 90vh;
     width: 100%;
-    background: linear-gradient(black, transparent), url(Images/contact-mountain.png);
+    background: linear-gradient(black, transparent), url(contact-mountain.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
