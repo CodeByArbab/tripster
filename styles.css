@@ -1,0 +1,421 @@
+/* Global Styles Start */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+h3{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+p{
+    font-size: 1.5rem;
+}
+
+/* Global Styles End */
+
+
+/* Nav Styles Start Here */
+
+nav{
+    background-color: #131c27;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    width: 90%;
+    margin: 0rem auto 0rem auto;
+    min-height: 10vh;
+}
+.logo{
+    font-family: lobster;
+    font-size: 3rem;
+    color: white;
+}
+nav .logo .trip{
+    /* color: rgb(255, 183, 0); */
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    font-family: montserrat;
+    color: white;
+}
+.nav-container{
+    background-color: #131c27;   
+}
+.social{
+    padding-left: 3rem;
+    display: flex;
+}
+li:hover{
+    color: rgb(255, 183, 0);
+}
+li{
+    transition: all;
+    transition-duration: 0.3s;
+}
+.icon:hover{
+    transform: translateY(-0.3rem);
+}
+.icon{
+    transition: all;
+    transition-duration: 0.3s;
+    font-size: 2rem;
+}
+
+
+/* Nav Styles End Here */
+
+/* Home Section Starts here  */
+
+.hero{
+    background: linear-gradient(black, transparent) ,url(Images/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.herohead1{
+    font-family: sacramento;
+    font-size: 7.6rem;
+}
+.herohead2{
+    font-family: montserrat;
+    font-size: 2rem;
+    padding: 3rem;
+    
+}
+.herobtn{
+    background-color: rgb(17, 54, 102);
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 0.7rem;
+    font-family: montserrat;
+    font-weight: 300;
+}
+.herobtn:hover{
+    color: black;
+    font-weight: 800;
+    box-shadow: 0rem 0rem 1.8rem #131c27;
+}
+/* Location Styles Starts */
+#locations{
+    height: 100vh;
+    background: linear-gradient(black, transparent), url(Images/new-york-page.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.locations-container{
+    width: 90%;
+    /* background-color: blueviolet; */
+    margin: 0rem auto 0rem auto;
+}
+.locationshead1{
+    font-family: montserrat;
+    font-size: 5rem;
+    background: linear-gradient(blue, navy);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+hr{
+    width: 60%;
+    background-color: navy;
+}
+.locationshead2{
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    
+}
+.cloud{
+    width: 60rem;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.cloud1{
+    top: 18%;
+    z-index: -3;
+    opacity: 0.6;
+    animation: itachi 2s infinite alternate ease-in-out;
+}
+.cloud2{
+    animation: itachi 2s infinite alternate 0.6s ease-in-out;
+}
+
+@keyframes itachi{
+    0%{
+        transform: translate(10%, -10%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+/* Cards Section aka Benefits Starts */
+
+#benefits{
+    min-height: 100vh;
+}
+.benefits-container{
+    background-color: #131c27;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.benefits-container h1{
+    font-family: montserrat extrabold;
+    font-size: 4rem;
+    
+}
+.benefits-container h2{
+    font-family: montserrat;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.cardscontainer .card img{
+    width: 8rem;
+}
+.cardscontainer{
+    width: 90%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem auto 0rem auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.card{
+    /* background-color: aquamarine; */
+    width: 30rem;
+    margin: 2rem 5rem;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem 5rem;
+    border-radius: 3rem;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0.5rem 0.5rem 2rem black;
+    background-color: #131c27;
+}
+.card:hover .card-heading{
+    color: white;
+}
+.card:hover .card-heading2{
+    color: white;
+}
+.card h2{
+    font-family: romantica personal use;
+    font-weight: 800;
+    font-size: 4rem;
+    color: black;
+    margin-top: 2rem;
+}
+.card h3{
+    font-family: montserrat;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: black;
+
+}
+
+
+/* Cards Section aka Benefits Ends */
+
+/* COntact Section Starts  */
+label{
+    border: none;
+}
+input{
+    padding: 0.1rem 5rem 0.1rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* margin-top: 2rem; */
+}
+input:focus {
+    /* border: 1px solid #131c27; */
+  }
+  footer{
+    background-color: #131c27;
+    text-align: center;
+  }
+  .foot-container{
+    width: 90%;
+    margin: auto auto;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul{
+    display: flex;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  #contact{
+    min-height: 90vh;
+    width: 100%;
+    background: linear-gradient(black, transparent), url(Images/contact-mountain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.form-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: auto; */
+    background-color: rgba(12, 18, 20, 0.8);
+    min-height: 70vh; 
+    border-radius: 1rem;  
+    position: relative;
+    
+}
+.contact-heading{
+    background-color: rgb(3, 75, 109);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-family: montserrat;
+    color: white;
+    text-align: center;
+}
+.contact-heading h1{
+    font-size: 4rem;
+    padding: 1rem;
+}
+.contact-heading h2{
+    font-size: 2rem;
+    font-family: montserrat;
+    font-weight: 1000;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+.button-container{
+    background-color: rgb(3, 75, 109);
+    width: 100%;
+    text-align: center;
+    font-family: sacramento;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* padding: 2rem; */
+}
+.contact-btn:hover{
+    color: goldenrod;
+    font-size: 4rem;
+}
+.input-box{
+    /* background-color: aqua; */
+    text-align: center;
+    font-family: montserrat Black;
+    font-size: 3rem;
+    /* padding: 5rem 10rem; */
+    width: 100%;
+    padding: 6rem 0rem;
+    color: white;
+}
+/* form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+} */
+.contact-btn{
+    transition: 0.3s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 630px)
+{
+    nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 530px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width: 346px)
+{
+    html{
+        font-size: 47%;
+    }
+}
+@media screen and (max-width: 332px)
+{
+    
+}
+
+/* Home Section Ends Here */
